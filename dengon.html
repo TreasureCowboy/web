@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="ufs-8"/>
+<script>
+function 伝言を残す() {
+  if (伝言内容.value === "") {
+    alert("伝言が入力されていません");
+  } else {
+    伝言エリア.innerText = 伝言内容.value;
+    alert("伝言が残されました");
+  }
+}
+</script>
+</head>
+<body>
+伝言板
+<p id="伝言エリア">伝言はまだありません</p>
+<input id="伝言内容"><button onclick="伝言を残す();">完了</button>
+</body>
+</html>
